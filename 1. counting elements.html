@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting particular elements</title>
+    <script>
+        function countList(){
+            var liElements =document.getElementsByTagName("li");
+            var howManyLi = liElements.length;
+          alert("There are " + howManyLi + " li elements in the document");
+            
+        }
+        
+        function countParagraph(){
+            var pElements =document.getElementsByTagName("p");
+            var howManyp = pElements.length;
+          alert("There are " + howManyp + " paragraph elements in the document");
+            
+        }
+        function count_h1(){
+            var h1Elements =document.getElementsByTagName("h1");
+            var howManyh1 = h1Elements.length;
+          alert("There are " + howManyh1 + " h1 elements in the document");
+            
+        }
+    </script>
+</head>
+<body>
+    <h1>We are checking lists here</h1>
+ <ul id="d1">
+    <li>This is some list data</li>
+    <li>This is some list data</li>
+    <li>This is some list data</li>
+    <li>This is some list data</li>
+    <li>This is some list data</li>
+    <li>This is some list data</li>
+    <li>This is some list data</li>
+    <li>This is some list data</li>
+    <li>This is some list data</li>
+    <li>This is some list data</li>
+ </ul> 
+<button onclick="countList()">click to check lists</button>
+<br>
+<br>
+<h1>We are checking paraghraph here</h1>
+<p>This a paragraph</p>
+<p>This a paragraph</p>
+<p>This a paragraph</p>
+<p>This a paragraph</p>
+<p>This a paragraph</p>
+<button onclick="countParagraph()">click to check paragraph</button>
+<br>
+<br>
+<button onclick="count_h1()">click to check number of h1</button>
+</body>
+</html>

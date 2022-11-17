@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Style in JS</title>
+    <script>
+function changeColorRed(){
+   var para=document.getElementById("p");
+   para.style.color="red";
+   var head=document.getElementById("h1");
+   head.style.color="red";
+}
+function changeColorBlue(){
+   var para=document.getElementById("p");
+   para.style.color="blue";
+   var head=document.getElementById("h1");
+   head.style.color="blue";
+}
+
+function changeBackgroundColorBlack(){
+    var para=document.getElementById("p");
+    para.style.backgroundColor="black";
+    para.style.color="white";
+    var head=document.getElementById("h1");
+    head.style.backgroundColor="black";
+    head.style.color="white";
+}
+function changeBackgroundColorViolet(){
+    var para=document.getElementById("p");
+    para.style.backgroundColor="violet";
+    para.style.color="white";
+    var head=document.getElementById("h1");
+    head.style.backgroundColor="violet";
+    head.style.color="white";
+}
+function allignRight(){
+    var para=document.getElementById("p");
+    para.style.textAlign="right";
+    var head=document.getElementById("h1");
+    head.style.textAlign="right";
+}
+function allignCenter(){
+    var para=document.getElementById("p");
+    para.style.textAlign="center";
+    var head=document.getElementById("h1");
+    head.style.textAlign="center";
+}
+    </script>
+</head>
+<body>
+    <h1 id="h1">Heading of webpage</h1>
+    <p id="p">Content of web page</p>
+    <button onclick="changeColorRed()">Click to change text colors to red</button>
+    <br>
+    <br>
+    <button onclick="changeColorBlue()">Click to change text colors to blue</button>
+    <br>
+    <br>
+    <button onclick="changeBackgroundColorBlack()">Click to change background color to Black</button>
+    <br>
+    <br>
+    <button onclick="changeBackgroundColorViolet()">Click to change background color to Violet</button>
+    <br>
+    <br>
+    <button onclick="allignRight()">Click to change allignment to right</button>
+    <br>
+    <br>
+    <button onclick="allignCenter()">Click to change allignment to center</button>
+    
+</body>
+</html>

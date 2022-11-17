@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking childNodes</title>
+    <script>
+        function checkChildNodes(){
+            var list = document.getElementById("d1");
+            var childNodes = list.childNodes;
+            var howManyChildNodes = childNodes.length;
+            //The above three lines will just tell us how many child nodes are there in the list
+            //It will also tell us the length of the childNodes array
+            var numberPics = 0;
+            var number_of_p=0;
+            for (var i = 0; i < howManyChildNodes; i++) {
+                if (childNodes[i].nodeName.toLowerCase() === "img") {
+                    numberPics++;
+}
+if (childNodes[i].nodeName.toLowerCase() === "p") {
+    number_of_p++;
+}
+            }
+            
+            alert("There are " + numberPics + " pictures in the list");
+            alert("There are " + number_of_p + " paragraph in the list");
+        }
+    </script>
+
+</head>
+<body>
+    <div id="d1">
+        <img height="250" width="250" src="https://thumbs.dreamstime.com/b/spring-flowers-blue-crocuses-drops-water-backgro-background-tracks-rain-113784722.jpg" alt="This is image">
+        <img height="250" width="250" src="data:image/jpeg;base64,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" alt="This is also image">
+        <img height="250" width="250" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGPwpDw_FdtKYXYg7wtlqb73TarSKZ4JZ-IEoqCLN4dQ&s" alt="This is also and image">
+    <br>
+    <br>
+    <br>
+    <p>This is 1st paragraph</p>
+    <p>This is 2nd paragraph</p>
+    <p>This is 3rd paragraph</p>
+    <h1>Heading 1</h1>
+    <h2>heading 2</h2>
+    </div>
+
+    <button onclick="checkChildNodes()">Check</button>
+</body>
+</html>

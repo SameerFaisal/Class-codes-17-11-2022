@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+    <p>Execute a function when a user clicks on a button:</p>
+
+<button id="myBtn">Click me</button>
+
+<h1 id="demo"></h1>
+
+<script>
+var element = document.getElementById("myBtn");
+element.addEventListener("click", myFunction);
+var count=0;
+function myFunction() {
+
+  document.getElementById("demo").innerHTML = count++;
+}
+</script>
+</body>
+</html>
